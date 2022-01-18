@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+    <title>Positive Or Negative Text</title>
+</head>
+<body>
+    <h1>Sentimentor</h1>
+    <form action="" id="Sentimentor-Form">
+
+        <label for="textarea" id="texarea-label">
+            <textarea name="textarea" id="textarea" cols="80" rows="15" placeholder="We have been through much darker times than these, and somehow each generation of Americans carried us through to the other side, he said. Not by sitting around and waiting for something to happen, not by leaving it to others to do something, but by leading that movement for change themselves. And if you do that, if you get involved, and you get engaged, and you knock on some doors, and you talk with your friends, and you argue with your family members, and you change some minds, and you vote, something powerful happens."></textarea>
+        </label>
+
+        <br>
+        
+        <input type="button" id="submit" value="Check This Text" onclick="textChecker(
+        document.getElementById('textarea').value,
+        )">
+    </form>
+
+    <div id="result">
+        <p id="polarity"></p>
+        <p id="type"></p>
+    </div>
+
+    
+</body>
+</html>
